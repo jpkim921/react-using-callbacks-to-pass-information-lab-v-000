@@ -23,13 +23,14 @@ export default class Matrix extends Component {
   // the color state is being held in this Matrix component.
   // the color that was selected was passed back from ColorSelector component (child) to Matrix (parent) through a callback function
   setSelectedColor = (newColor) => {
-    this.setState(
-      {selectedColor: newColor}
-    )
+    this.setState({
+      selectedColor: newColor
+    })
   }
 
   // this is the additional method to grab the color so that we can pass it to the Cell component
-  getSelectedColor = () => {this.state.selectedColor}
+  getSelectedColor = () => (this.state.selectedColor)
+
 
 
   // passing in the selectedColor method as a prop into the ColorSelector component
